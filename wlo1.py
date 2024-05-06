@@ -20,8 +20,8 @@ def main():
     spoofed_ip = input("What is the spoofed IP address? ")
     target_port = 80
     spoofed_port = 420
-    payload = "A" * 1400  # Ensure payload is string type
-    packet_count = 1000   # Adjust packet count as needed
+    payload = "A" * 1400 
+    packet_count = 1000   
 
     # CPU 
     num_threads = os.cpu_count() * 10
