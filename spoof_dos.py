@@ -4,12 +4,7 @@ import time
 import asyncio
 from scapy.all import *
 
-
-
-
-#USAGE sudo python3 spoof_dos.py 
-
-
+# sudo python3 spoof_dos.py IP Iface spoofIP
 
 async def send_packets(target_ip, spoofed_ip, target_port, spoofed_port, payload, packet_count, iface):
     try:
