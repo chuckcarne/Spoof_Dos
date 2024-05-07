@@ -9,7 +9,7 @@ This project is intended for educational purposes only. Misuse of this code for 
 ## Usage
 1. Clone this repository to your local machine:
 
-git clone https://github.com/yourusername/spoofed_dos.git
+git clone https://github.com/chuckcarne/Spoof_Dos
 
 2. Navigate to the project directory:
 
