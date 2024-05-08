@@ -1,6 +1,10 @@
 import threading
 import os
-from scapy.all import *
+from scapy.layers.inet import IP, UDP
+from scapy.packet import Raw
+from scapy.sendrecv import send
+
+
 
 def send_packets(target_ip, spoofed_ip, target_port, spoofed_port, payload, packet_count):
     try:
